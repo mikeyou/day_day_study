@@ -100,5 +100,20 @@ git remote show origin
 git remote rename a b
 git remote remove b
 
+#### 打标签
+ 列出标签  git tag -l
+ 寻找特定标签 git tag -l "v.1.8.5*"        --即寻找1.8.5系列
+ 创建附注标签 git tag -a v1.4 -m 'my version 1.4'
+ 创建轻量级标签 git tag v1.4.1
+ 后期打标签（后面跟上提交的部分校验和） git tag -a v1.2 9fceb02
+ 删除标签 git tag -d <tagName>
 
+#### 分支创建
+ git branch <分支名>
+ git checkout <分支名> 切换分支
+ 
+ https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6
+
+ git branch -d <分支名>
+ git branch --no-merged 查看所有未合并的分支
 
