@@ -60,3 +60,45 @@ git commit -m '注释'
 
 
 #### 移除文件
+git rm 【文件】
+移除文件换句话说就是从暂存区域移除该文件不再跟踪该文件
+
+仍然保存在工作空间，只移除缓存区域的
+git rm --cached 【文件】
+
+#### 移动文件
+git mv
+
+#### 查看提交历史
+git log
+	-p 显示每次提交所引入的差异
+	-num 显示最近提交的次数
+	--stat 显示最近提交的简略统计信息
+	--pretty 使用其他格式显示历史提交信息,可用选项[online,short,full,fuller,format]
+
+#### 撤销操作
+git commit --amend
+
+#### 查看远程仓库
+git remote
+	-v 查看对应url
+
+#### 添加远程仓库
+git remote add
+#### 从远程仓库中抓取与拉去
+git fetch <remote>
+这个命令值会抓取数据到你的本地，并不会比较合并
+git pull通常会从最初克隆的服务器上抓取数据并自动尝试合并到当前的所在分支
+
+#### 推送
+git push origin master
+
+#### 查看某个仓库更多信息
+git remote show origin
+
+#### 远程仓库的重命名与移除
+git remote rename a b
+git remote remove b
+
+
+
