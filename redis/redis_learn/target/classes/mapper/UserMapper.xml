@@ -1,0 +1,17 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="code.cn.dao.UserDao">
+
+    <resultMap id="userResult" type="code.cn.model.User">
+        <result property="userId" column="user_id"/>
+        <result property="account" column="account"/>
+        <result property="password" column="password"/>
+        <result property="createAt" column="createAt"/>
+    </resultMap>
+
+    <select id="findAllUserList" resultMap="userResult">
+        select * from sys_user
+    </select>
+
+</mapper>
